@@ -14,7 +14,7 @@ default: &default
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password:
+  password: assamdarje2013
   socket: /tmp/mysql.sock
 
 development:
@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: slack_command_test_production
-  username: slack_command_test
-  password: <%= ENV['SLACK_COMMAND_TEST_DATABASE_PASSWORD'] %>
+  username: root
+  host: arata.ckbzijwl88gi.ap-southeast-1.rds.amazonaws.com
+  password: assamdarje2013
