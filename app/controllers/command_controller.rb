@@ -11,7 +11,8 @@ class CommandController < ActionController::Base
   	@times = []
   	unit = 30
   	(0..14).each do |h|
-  		hour = ((unit + unit * h) / 60).to_f
+  		hour = (unit + unit * h)
+  		hour = hour.quo(60).to_f
   		@times.push("#{hour.to_s}時間")
   	end
   end
