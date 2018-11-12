@@ -12,6 +12,7 @@ json.set! 'attachments' do
 				json.text t
 				json.type "button"
 				json.value t
+				json.response_url daily_report_v1_url
 			end
 		end
 	end
