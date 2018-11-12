@@ -1,6 +1,6 @@
 json.text "Would you like to play a game?"
 json.set! 'attachments' do 
-	json.array do 
+	json.array! do 
 		json.text "Choose a game to play"
 		json.fallback "You are unable to choose a game"
 		json.callback_id "wopr_game"
