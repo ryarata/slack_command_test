@@ -12,7 +12,7 @@ class CommandController < ActionController::Base
   	unit = 30
   	(0..14).each do |h|
   		hour = (unit + unit * h) / 60
-  		@times.push("#{hour}時間")
+  		@times.push("#{hour.to_f.to_s}時間")
   	end
   end
 
