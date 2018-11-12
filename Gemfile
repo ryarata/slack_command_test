@@ -3,7 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.1'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
@@ -14,7 +13,7 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'mini_racer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -35,6 +34,44 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+
+# bootstrap
+gem 'bootstrap-sass'
+gem 'jquery-rails'
+# 環境変数
+gem 'dotenv-rails'
+# Excel操作
+gem 'csv'
+gem 'iconv'
+gem 'roo'
+# 注釈
+gem 'annotate'
+# schema
+gem 'ridgepole'
+# image
+gem 'paperclip'
+# user
+gem 'devise', '~> 4.4.3'
+# pagenation
+gem 'kaminari'
+# rails console
+#gem 'pry-rails'
+
+gem "unicorn"
+gem 'active_hash' #model用
+gem "meta-tags"
+gem "font-awesome-rails" #css
+gem 'cocoon' #form
+gem "rmagick"
+gem 'compass-rails', github: 'Compass/compass-rails' #css
+gem "whenever"
+gem "rack-simple_user_agent" #mobile判別
+gem "meta-tags"
+gem "gretel"
+gem 'impressionist'
+gem 'aws-sdk', '~> 3'
+gem 'mail'
+gem 'administrate'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
