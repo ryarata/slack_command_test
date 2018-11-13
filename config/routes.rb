@@ -12,5 +12,6 @@
 Rails.application.routes.draw do
   match 'daily_report' => "command#daily_report",via: [:get,:post]
   post 'daily_report_v1' => "command#daily_report"
+  post "daily_report_action" => "command#daily_report_action"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
